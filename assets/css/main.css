@@ -1,0 +1,27 @@
+html{
+  /* font-size: 62.5%; */
+  font-family: Arial, Helvetica, sans-serif
+}
+
+body{
+  background-color: #fff;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app{
+  min-width: 50rem;
+}
+
+.flex-2{
+  flex:2;
+}
+
+/* .min-width-15{
+  min-width: 42px;
+} */
+.max-width-60{
+  max-width: 60px;
+}

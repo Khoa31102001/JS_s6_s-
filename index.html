@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="build/tailwind.css" />
+    <link rel="stylesheet" href="assets/css/main.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="app">
+      <div class="board-calculate border-2 rounded-lg border-gray-300">
+        <div class="flex">
+          <svg
+            class="w-5 h-5 fill-stone-500 ml-2 mt-2"
+            focusable="false"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+          >
+            <path
+              d="M13 3a9 9 0 0 0-9 9H1l3.89 3.89.07.14L9 12H6c0-3.87 3.13-7 7-7s7 3.13 7 7-3.13 7-7 7c-1.93 0-3.68-.79-4.94-2.06l-1.42 1.42A8.954 8.954 0 0 0 13 21a9 9 0 0 0 0-18zm-1 5v5l4.28 2.54.72-1.21-3.5-2.08V8H12z"
+            ></path>
+          </svg>
+        </div>
+        <div class="w-full text-right">
+          <p class="value-calculator text-4xl font-bold mr-3">0</p>
+        </div>
+      </div>
+      <div class="board-key mt-3 flex gap-1">
+        <table class="board-key-left flex-1 text-center">
+          <tbody>
+            <tr>
+              <td>
+                <div class="rage-deg-x flex gap-2">
+                  <div
+                    class="rag-deg px-12 py-2 flex flex-1 justify-between border-none rounded-md bg-gray-300 w-full"
+                  >
+                    <div class="rad">Rad</div>
+                    <div>|</div>
+                    <div class="deg">Deg</div>
+                  </div>
+                  <div class="px-6 py-2 border-none rounded-md bg-gray-300 max-w-[60px]">
+                    x!
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="inv-sin-ln flex gap-2">
+                  <div
+                    class="flex flex-1 justify-between content-between gap-2"
+                  >
+                    <div
+                      class="inv px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                    >
+                      Inv
+                    </div>
+                    <div></div>
+                    <div
+                      class="sin px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                    >
+                      sin
+                    </div>
+                  </div>
+                  <div class="px-6 py-2 ln border-none rounded-md bg-gray-300 max-w-[60px]">
+                    ln
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="inv-sin-ln flex gap-2">
+                  <div
+                    class="flex flex-1 justify-between content-between gap-2"
+                  >
+                    <div
+                      class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                    >
+                      π
+                    </div>
+                    <div></div>
+                    <div
+                      class="cos px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                    >
+                      cos
+                    </div>
+                  </div>
+                  <div class="log px-6 py-2 border-none rounded-md bg-gray-300 max-w-[60px]">
+                    log
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="inv-sin-ln flex">
+                  <div
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                  >
+                    e
+                  </div>
+                  <div
+                    class="tan px-6 border-none rounded-md bg-gray-300 py-2 flex-1"
+                  >
+                    tan
+                  </div>
+                  <div
+                    class="sqrt px-6 py-2 border-none rounded-md bg-gray-300"
+                  >
+                    √
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="inv-sin-ln flex">
+                  <div
+                    class="inv px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                  >
+                    Ans
+                  </div>
+                  <div
+                    class="sin px-6 border-none rounded-md bg-gray-300 py-2 flex-1 uppercase"
+                  >
+                    exp
+                  </div>
+                  <div class="pow px-6 py-2 border-none rounded-md bg-gray-300">
+                    x<sup>y</sup>
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+        <table class="board-key-right flex-2 text-center">
+          <tbody>
+            <tr>
+              <td>
+                <div class="flex gap-2">
+                  <div
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                  >
+                    (
+                  </div>
+                  <div
+                    class="key px-6 border-none rounded-md bg-gray-300 py-2 flex-1 uppercase"
+                  >
+                    )
+                  </div>
+                  <div
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                  >
+                    %
+                  </div>
+                  <div
+                    class="ac px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                  >
+                    AC
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="flex gap-2">
+                  <div
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                  >
+                    7
+                  </div>
+                  <div
+                    class="key px-6 border-none rounded-md bg-gray-300 py-2 flex-1 uppercase"
+                  >
+                    8
+                  </div>
+                  <div
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                  >
+                    9
+                  </div>
+                  <div
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                  >
+                    ÷
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="inv-sin-ln flex gap-2">
+                  <div
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                  >
+                    4
+                  </div>
+                  <div
+                    class="key px-6 border-none rounded-md bg-gray-300 py-2 flex-1 uppercase"
+                  >
+                    5
+                  </div>
+                  <div
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                  >
+                    6
+                  </div>
+                  <div
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                  >
+                    x
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="inv-sin-ln flex gap-2">
+                  <div
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                  >
+                    1
+                  </div>
+                  <div
+                    class="key px-6 border-none rounded-md bg-gray-300 py-2 flex-1 uppercase"
+                  >
+                    2
+                  </div>
+                  <div
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                  >
+                    3
+                  </div>
+                  <div
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                  >
+                    -
+                  </div>
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <div class="inv-sin-ln flex gap-2">
+                  <div
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                  >
+                    0
+                  </div>
+                  <div
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1 uppercase"
+                  >
+                    .
+                  </div>
+                  <div
+                    class="cal px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                  >
+                    =
+                  </div>
+                  <div
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                  >
+                    +
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+    <script src="js/app.js"></script>
+  </body>
+</html>
