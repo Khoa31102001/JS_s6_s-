@@ -36,11 +36,13 @@
                   <div
                     class="rag-deg px-12 py-2 flex flex-1 justify-between border-none rounded-md bg-gray-300 w-full"
                   >
-                    <div class="rad">Rad</div>
+                    <div class="rad cursor-pointer">Rad</div>
                     <div>|</div>
-                    <div class="deg">Deg</div>
+                    <div class="deg cursor-pointer">Deg</div>
                   </div>
-                  <div class="px-6 py-2 border-none rounded-md bg-gray-300 max-w-[60px]">
+                  <div
+                    class="px-6 py-2 border-none rounded-md bg-gray-300 max-w-[3.75rem] cursor-pointer"
+                  >
                     x!
                   </div>
                 </div>
@@ -53,18 +55,20 @@
                     class="flex flex-1 justify-between content-between gap-2"
                   >
                     <div
-                      class="inv px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                      class="inv px-6 py-2 border-none rounded-md bg-gray-300 flex-1 cursor-pointer"
                     >
                       Inv
                     </div>
                     <div></div>
                     <div
-                      class="sin px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                      class="sin px-6 py-2 border-none rounded-md bg-gray-300 flex-1 cursor-pointer"
                     >
                       sin
                     </div>
                   </div>
-                  <div class="px-6 py-2 ln border-none rounded-md bg-gray-300 max-w-[60px]">
+                  <div
+                    class="px-6 py-2 ln border-none rounded-md bg-gray-300 max-w-[3.75rem] cursor-pointer"
+                  >
                     ln
                   </div>
                 </div>
@@ -77,18 +81,20 @@
                     class="flex flex-1 justify-between content-between gap-2"
                   >
                     <div
-                      class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                      class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1 cursor-pointer"
                     >
                       π
                     </div>
                     <div></div>
                     <div
-                      class="cos px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                      class="cos px-6 py-2 border-none rounded-md bg-gray-300 flex-1 cursor-pointer"
                     >
                       cos
                     </div>
                   </div>
-                  <div class="log px-6 py-2 border-none rounded-md bg-gray-300 max-w-[60px]">
+                  <div
+                    class="log px-6 py-2 border-none rounded-md bg-gray-300 max-w-[3.75rem] cursor-pointer"
+                  >
                     log
                   </div>
                 </div>
@@ -96,19 +102,25 @@
             </tr>
             <tr>
               <td>
-                <div class="inv-sin-ln flex">
+                <div class="inv-sin-ln flex gap-2">
                   <div
-                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                    class="flex flex-1 justify-between content-between gap-2"
                   >
-                    e
+                    <div
+                      class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1 cursor-pointer"
+                    >
+                      e
+                    </div>
+                    <div></div>
+                    <div
+                      class="tan px-6 border-none rounded-md bg-gray-300 py-2 flex-1 cursor-pointer"
+                    >
+                      tan
+                    </div>
                   </div>
+
                   <div
-                    class="tan px-6 border-none rounded-md bg-gray-300 py-2 flex-1"
-                  >
-                    tan
-                  </div>
-                  <div
-                    class="sqrt px-6 py-2 border-none rounded-md bg-gray-300"
+                    class="sqrt px-6 py-2 border-none rounded-md bg-gray-300 min-w-[3.75rem] cursor-pointer"
                   >
                     √
                   </div>
@@ -117,18 +129,25 @@
             </tr>
             <tr>
               <td>
-                <div class="inv-sin-ln flex">
+                <div class="inv-sin-ln flex gap-2">
                   <div
-                    class="inv px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                    class="flex flex-1 justify-between content-between gap-2"
                   >
-                    Ans
+                    <div
+                      class="ans px-6 py-2 border-none rounded-md bg-gray-300 flex-1 cursor-pointer"
+                    >
+                      Ans
+                    </div>
+                    <div></div>
+                    <div
+                      class="exp px-6 border-none rounded-md bg-gray-300 py-2 flex-1 uppercase cursor-pointer"
+                    >
+                      exp
+                    </div>
                   </div>
                   <div
-                    class="sin px-6 border-none rounded-md bg-gray-300 py-2 flex-1 uppercase"
+                    class="pow px-6 py-2 border-none rounded-md bg-gray-300 max-w-[3.75rem] cursor-pointer"
                   >
-                    exp
-                  </div>
-                  <div class="pow px-6 py-2 border-none rounded-md bg-gray-300">
                     x<sup>y</sup>
                   </div>
                 </div>
@@ -142,22 +161,22 @@
               <td>
                 <div class="flex gap-2">
                   <div
-                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1 cursor-pointer"
                   >
                     (
                   </div>
                   <div
-                    class="key px-6 border-none rounded-md bg-gray-300 py-2 flex-1 uppercase"
+                    class="key px-6 border-none rounded-md bg-gray-300 py-2 flex-1 cursor-pointer"
                   >
                     )
                   </div>
                   <div
-                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1 cursor-pointer"
                   >
                     %
                   </div>
                   <div
-                    class="ac px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                    class="ac px-6 py-2 border-none rounded-md bg-gray-300 flex-1 cursor-pointer"
                   >
                     AC
                   </div>
@@ -168,22 +187,22 @@
               <td>
                 <div class="flex gap-2">
                   <div
-                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1 cursor-pointer"
                   >
                     7
                   </div>
                   <div
-                    class="key px-6 border-none rounded-md bg-gray-300 py-2 flex-1 uppercase"
+                    class="key px-6 border-none rounded-md bg-gray-300 py-2 flex-1 cursor-pointer"
                   >
                     8
                   </div>
                   <div
-                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1 cursor-pointer"
                   >
                     9
                   </div>
                   <div
-                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1 cursor-pointer"
                   >
                     ÷
                   </div>
@@ -194,22 +213,22 @@
               <td>
                 <div class="inv-sin-ln flex gap-2">
                   <div
-                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1 cursor-pointer"
                   >
                     4
                   </div>
                   <div
-                    class="key px-6 border-none rounded-md bg-gray-300 py-2 flex-1 uppercase"
+                    class="key px-6 border-none rounded-md bg-gray-300 py-2 flex-1 cursor-pointer"
                   >
                     5
                   </div>
                   <div
-                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1 cursor-pointer"
                   >
                     6
                   </div>
                   <div
-                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1 cursor-pointer"
                   >
                     x
                   </div>
@@ -220,22 +239,22 @@
               <td>
                 <div class="inv-sin-ln flex gap-2">
                   <div
-                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1 cursor-pointer"
                   >
                     1
                   </div>
                   <div
-                    class="key px-6 border-none rounded-md bg-gray-300 py-2 flex-1 uppercase"
+                    class="key px-6 border-none rounded-md bg-gray-300 py-2 flex-1 cursor-pointer"
                   >
                     2
                   </div>
                   <div
-                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1 cursor-pointer"
                   >
                     3
                   </div>
                   <div
-                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1 cursor-pointer"
                   >
                     -
                   </div>
@@ -246,22 +265,22 @@
               <td>
                 <div class="inv-sin-ln flex gap-2">
                   <div
-                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1 cursor-pointer"
                   >
                     0
                   </div>
                   <div
-                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1 uppercase"
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1 uppercase cursor-pointer"
                   >
                     .
                   </div>
                   <div
-                    class="cal px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                    class="cal px-6 py-2 border-none rounded-md bg-gray-300 flex-1 cursor-pointer"
                   >
                     =
                   </div>
                   <div
-                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1"
+                    class="key px-6 py-2 border-none rounded-md bg-gray-300 flex-1 cursor-pointer"
                   >
                     +
                   </div>

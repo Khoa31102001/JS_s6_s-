@@ -92,7 +92,7 @@ log.addEventListener("click", function(e) {
 });
 
 cal.addEventListener("click", function (e) {
-  valueCalculator.textContent = transferValue(valueCalculator.textContent);
+  valueCalculator.textContent = eval(transferValue(valueCalculator.textContent));
   if(!checkNumber(valueCalculator.textContent)){
     valueCalculator.textContent = error;
     return;
